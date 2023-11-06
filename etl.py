@@ -30,7 +30,7 @@ def load(df: pd.DataFrame) -> None:
         df.to_sql('EUR_T', conn, if_exists='replace', index=False)
 
     except sqlite3.Error as err:
-        print("Bład polaczenia", err)
+        print("Connection error", err)
     finally:
         conn.close()
 
