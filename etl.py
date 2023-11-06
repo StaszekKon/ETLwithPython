@@ -25,6 +25,12 @@ def transform(data: dict) -> pd.DataFrame:
 
 def load(df: pd.DataFrame) -> None:
     """ Loading data into sqlite database"""
-    conn = sqlite3.connect('EUR_exchange_rate.db')
-    df.to_sql('EUR_T', conn, if_exists='replace', index=False)
-    conn.close()
+    try:
+        conn = sqlite3.connect('EUR_exchange_rate.db')
+        df.to_sql('EUR_T', conn, if_exists='replace', index=False)
+
+    except sqlite3.Error as err:
+        print("Bład polaczenia", err)
+    finally:
+        conn.close()
+
