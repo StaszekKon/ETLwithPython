@@ -10,6 +10,8 @@ Loaded data into sqlite database (by using client Sqliteman)
 
 
 + Tests of  methods - functions were performed using the pytest tool (command in terminal **pytest -v** or  **python -m pytest**).
+
+   **PyCharm environment**
   
 ![image](https://github.com/StaszekKon/ETLwithPython/assets/47722600/ca353302-fe04-4bc0-a980-27c6f729e612)
 
