@@ -4,14 +4,14 @@
 + Then the EUR exchange rate is transformed.
 + The transformed data are loaded into the sqlite database.
 
-Loaded data into sqlite database (by using client Sqliteman)
+Loaded data into sqlite database (by using client Sqliteman 1.2.2 for SQLite3)
 
 ![image](https://github.com/StaszekKon/ETLwithPython/assets/47722600/c9e0bd6b-f97d-4e9a-ad46-295e921fe4bf)
 
 
 + Tests of  methods - functions were performed using the pytest tool (command in terminal **pytest -v** or  **python -m pytest**).
 
-   **PyCharm environment**
+   **PyCharm 2023.1.1 environment**
   
 ![image](https://github.com/StaszekKon/ETLwithPython/assets/47722600/ca353302-fe04-4bc0-a980-27c6f729e612)
 
